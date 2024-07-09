@@ -1,0 +1,303 @@
+*{
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;	
+	height: 10vw;
+	background-color: darkgray;
+	text-align: center;
+	font-size: 5vw;
+	color: white;
+	padding: 3vw;
+}
+
+#topNav{
+	width: 100%;
+	height: 3vw;
+	background-color: darkgray;	
+}
+
+
+.menuItem{
+	display:inline-block;
+	position:relative;
+	margin-left:1vw;
+	padding-right: 2vw;
+	font-size: 2vw;
+	color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+
+}
+
+.subMenu{
+	position:absolute;
+	display: none;
+	width: 19vw;
+	z-index: 5;	
+	background-color: lightgray;
+	padding-left:2vw;
+  box-shadow: 0 7px 10px 0 rgba(0.3, 0, 0, 0.2), 0 8px 24px 0 rgba(0.3, 0, 0, 0.19);
+
+}
+
+.menuUL{
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+}
+
+.menuItem:hover .subMenu
+{
+  display:block;
+}
+
+
+/*
+#topUL{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;	
+}
+
+
+#topNav ul li{
+	float: left;
+	width: 10vw;
+	background-color: green;
+	border: 1px solid yellow;
+	height: 100%;
+	font-size: 2vw;
+}
+*/
+
+main{
+	width: 100%;
+	border: 1px solid green;
+
+	background-color: white;
+	margin:0px;
+	padding: 2px;
+
+}
+
+aside{
+	float: left;
+	width: 20%;
+	height: 100%;
+	background-color: darkgray;
+}
+
+aside ul{
+	width: 100%;
+	list-style-type: none;
+	padding: 0px;
+	margin:0px;
+	font-size: 2vw;
+}
+
+aside ul li{
+	width: 100%;
+	background-color: green;
+	border: 1px solid yellow;
+	padding: 2px;
+	font-size: 2vw;
+}
+
+article{
+	float: left;
+	width: 80%;
+	height:100%;
+	background-color: #AABBCC;
+}
+
+#s1{
+
+	width:100%;
+	height:50vw;
+	border: 1px solid green;
+	padding: 	5px;
+	overflow: auto;
+	overflow-y:scroll;
+}
+
+footer{
+	width: 100%;
+	background-color: darkgray;
+	
+	color: white;
+	font-size:14px;	
+	text-align: center;
+}
+
+a {
+	font-size: 14px;
+	display: block;
+}
+
+a:link {
+	color: yellow;
+	background-color: lightgray;
+	text-decoration: none;
+}
+
+
+a:visited{
+	color: green;
+	text-decoration: none;
+	background-color: #AA99BB;
+}
+
+
+a:hover{
+	color: red;
+	background-color: #22AAAA;
+}
+
+a:active{
+	color: yellow;
+	background-color: #555555;
+}
+
+
+.bearImage{
+	width: 20vw;
+	height: 20vw;
+	border: 2px double green;
+	border-width:3px;
+	border-radius: 50%;
+	padding:0px;
+	margin:0px;
+	display: inline-block;
+
+	z-index: 1;	
+}
+
+#coin2 {
+	display: inline-block;
+	visibility: hidden;
+	position:sticky;
+	z-index: 2;
+}
+
+#images{
+	width: 100%;
+	height: 25vw;
+	border: 1px solid green;
+	overflow-x: auto;
+	white-space: nowrap;
+	position: relative;
+}
+
+
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.header {
+  background-color: powderblue;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+div.container{
+  padding: 3vw;
+}
+
+div class="flex-container">
+    <div class="flex-item"><img src="image1.jpg" alt="Image 1"></div>
+    <div class="flex-item"><img src="image2.jpg" alt="Image 2"></div>
+    <div class="flex-item"><img src="image3.jpg" alt="Image 3"></div>
+    <!-- Add more images as needed -->
+</div>
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.flex-item {
+    flex: 0 0 200px;
+    align-self: stretch;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+article
+    section
+        <div class="grid-container">
+            <div class="grid-item"><img src="image4.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="image5.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="image6.jpg" alt="Image 6"></div>
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+</article>
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 200px;
+    align-content: start;
+    overflow: scroll;
+}
+
+.grid-item {
+
+}
+
+.box {
+    box-shadow: 4px 4px 8px 0 rgb(12, 11, 11), 4px 6px 20px 0 rgb(200, 236, 200);
+}
+
+<li class="dropdown">
+    <div>
+        <a href="">Home</a>
+        <div class="dropdown-content">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </div>
+</li>
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 8px 8px 16px 0px rgba(216, 230, 31, 0.836), 8px 8px 16px 0px rgba(187, 116, 116, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: black;
+}
+
+body {
+    counter-reset: x;
+}
+
+h2::after {
+    counter-increment: x 1;
+    content: counter(x) ": ";
+}
