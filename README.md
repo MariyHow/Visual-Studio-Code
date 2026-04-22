@@ -7,4 +7,5 @@ These projects were created during my computer science studies at Albany State U
 -   HTML
 -   CSS
 -   JavaScript
+-   Python
 -   Visual Studio Code
